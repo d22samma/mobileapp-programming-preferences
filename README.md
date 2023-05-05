@@ -1,14 +1,20 @@
 
 # Assignment 6: Shared preferences
 ## Read data and show shared data from SecondActivity in MainActivity
+Use Variables to declare SharedPreferences. During void onCreate() it is getting the 
+SharedPreferences when the application starts.
+During protected void resume() it is getting SharedPreferences every time a new activity 
+starts inside the application.
 
 ## SecondActivity that can be opened from MainActivity
+We can move between activities by using a button inside Main activity with intent that say we want to move to SecondActivity.
+To move backwards we can add a parentActivityName inside the activity named Second activity in the Android manifest to mention that the parent of second Activity correspond Main Activity.
 
 ## Data to Shared Preferences using EditText
-
-
-
-
+Inside Second activity we have a editText. The EditText value  correspond the value we send to our SharedPreference.
+The EditText value saves by clicking the Save Button. The Save Button trigger a function called save.
+The save function finds the value of EditText and stores the value inside the storage of the SharedPreferences
+by using myPreferenceEditor.apply();.
 
 ## Code Examples
 **Read Data**
@@ -58,7 +64,16 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-_Navigation Button_
+_Navigation to SecondActivity_
+
+```xml
+<activity
+            android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" 
+/>
+```
+_Parent Button from SecondActivity to MainActivity_
 
 **Data to Shared Preferences**
 ```java
