@@ -29,14 +29,14 @@
         android:layout_width="211dp"
         android:layout_height="79dp"
         android:text="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/NextPage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/NextPage"
         android:layout_width="137dp"
         android:layout_height="51dp"
         android:text="@string/nextpagebtn"
