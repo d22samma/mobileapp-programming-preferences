@@ -32,8 +32,6 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 save();
-                Intent intent = new Intent(SecondActivity.this, MainActivity.class);
-                startActivity(intent);
             }
         });
     }
