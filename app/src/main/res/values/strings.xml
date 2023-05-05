@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Shared Preferences</string>
+    <string name="nextpagebtn">Next Page</string>
 </resources>
